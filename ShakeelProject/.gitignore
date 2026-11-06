@@ -1,0 +1,18 @@
+# --- ShakeelProject ---
+node_modules/
+dist/
+.vite/
+*.log
+.DS_Store
+
+# Storage runtime data (keep the .gitkeep placeholders)
+Backend/storage/tmp/*
+Backend/storage/vault/*
+!Backend/storage/tmp/.gitkeep
+!Backend/storage/vault/.gitkeep
+
+# NOTE: Backend/.env is committed ON PURPOSE in this project so the app
+# runs instantly with dev secrets. Before deploying to production:
+# 1) replace every secret in .env with freshly generated values
+# 2) set NODE_ENV=production
+# 3) consider adding .env to .gitignore
